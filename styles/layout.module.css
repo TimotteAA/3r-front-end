@@ -1,0 +1,63 @@
+.imgContainer {
+  @apply bg-gradient-to-r from-blue-400 to-blue-300;
+  position: relative;
+  overflow: hidden;
+}
+
+.people {
+  position: absolute;
+  top: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: aliceblue;
+  background: url("/assets/img2.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 45%;
+  width: 100%;
+  z-index: 1;
+}
+
+.cloud1 {
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  background: url("/assets/cloud_1.png") no-repeat;
+  background-size: contain;
+  top: 55%;
+  left: 22%;
+  z-index: 2;
+  animation: cloud1 15.5s ease-in 1s infinite;
+  transform: translateX(290%);
+}
+
+.cloud2 {
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background: url("/assets/cloud_2.png") no-repeat;
+  background-size: contain;
+  top: 25%;
+  left: 70%;
+  z-index: 0;
+  animation: cloud2 13.5s ease-in 5.5s infinite;
+  transform: translateX(150%);
+}
+
+@keyframes cloud1 {
+  0% {
+    transform: translateX(290%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+@keyframes cloud2 {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}

@@ -1,0 +1,11 @@
+/* 覆盖登录页的样式 */
+.arco-tabs-header {
+  width: 100%;
+}
+
+/* label */
+.arco-form-label-item label {
+  display: flex;
+  align-items: center;
+  padding-left: calc(10%);
+}
